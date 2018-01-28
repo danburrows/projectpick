@@ -7,20 +7,132 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/uikit.min.css" />
-        <link rel="stylesheet" href="css/over.css" />
+        <link rel="stylesheet" href="css/over-app.css" />
         <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/uikit.min.js"></script>
         <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
-        <div class="uk-container-expand uk-background-primary" id="header">
-            <h1>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            
+        <div class="uk-container uk-container-expand uk-text-center" id="header">
+            <ul class="uk-list uk-position-top-right" id="nav">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <h1>Picks Disease</h1>
         </div>
+
+<!-- filter -->
+<div class="uk-container uk-container-large">
+  <div class="uk-clearfix">
+      <div class="uk-float-right uk uk-padding uk-padding-remove-right">
+        <div class="uk-float-left">
+          <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button">Filter</button>
+              <div uk-dropdown="mode: click">
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </div>
+          </div>
+          <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button">Filter</button>
+              <div uk-dropdown="mode: click">
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </div>
+          </div>
+          <div class="uk-inline">
+              <button class="uk-button uk-button-default" type="button">Filter</button>
+              <div uk-dropdown="mode: click">
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+                <li><a href="#">Item</a></li>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="uk-float-left uk-padding uk-padding-remove-bottom uk-padding-remove-left">
+        <p id="count" class="uk-text-small">Showing all 999 items</p>
+        </p>
+      </div>
+      </div>
+  </div>
+</div>
+
+<!-- grid -->
+<div class="uk-container uk-container-large">
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+  </div>
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+  </div>
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+  </div>
+  <div class="uk-child-width-expand@s uk-text-center" uk-grid>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+      <div>
+          <img src="images/pick-items/test-image.png">
+      </div>
+  </div>
+</div>
     </body>
 </html>

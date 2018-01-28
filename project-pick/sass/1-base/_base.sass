@@ -1,18 +1,7 @@
 
-
-// VARIABLES //
-
-$black: #000
-$pale: #d2e1dd
-$pink: #c69
-$blue: #036
-
-$font-stack: 'Andale Mono', monospace
-$fontsize: 16px
-
 // MIXINS //
 
-=hero($bg, $colour, $padding)
+=header($bg, $colour, $padding)
 	background: $bg
 	color: $colour
 	padding: $padding
@@ -20,15 +9,15 @@ $fontsize: 16px
 // STYLES //
 
 body
-	background: $pale
-	color: $blue
+	color: $black
 	font: $font-stack
 	font-size: $fontsize
 
 #header
-	+hero($pale, $pink, 20rem 10rem)
+	+header($pale, $pink, 20rem 10rem)
 
 h1
 	font-size: $fontsize * 2
-	color: $black
 
+a, a:hover
+	color: $black
