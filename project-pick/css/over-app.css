@@ -17,3 +17,8 @@ a, a:hover {
 #nav li {
   display: inline-block;
   padding: 1rem 1rem; }
+
+.uk-sticky {
+  z-index: 980;
+  background-color: #fff;
+}
