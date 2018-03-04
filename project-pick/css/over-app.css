@@ -3,22 +3,40 @@ body {
   font: "Andale Mono", monospace;
   font-size: 16px; }
 
-#header {
-  background: #d2e1dd;
-  color: #c69;
-  padding: 20rem 10rem; }
-
 h1 {
   font-size: 32px; }
 
 a, a:hover {
   color: #000; }
 
+h1 {
+  color: #ffffff; }
+
 #nav li {
   display: inline-block;
   padding: 1rem 1rem; }
 
+#header {
+  height: 100vh; }
+
+#hero {
+  top: 40%;
+  position: relative; }
+
+.hero-dark {
+  width: 100%;
+  background-color: black;
+  position: absolute; }
+
+.hero-image {
+  width: 100%;
+  position: absolute;
+  height: 100vh;
+  background: url("../images/hero-test.png");
+  opacity: 0.5; }
+
+.grid-pic {
+  padding: 1rem; }
+
 .uk-sticky {
-  z-index: 980;
-  background-color: #fff;
-}
+  background-color: #ffffff; }

@@ -13,30 +13,42 @@
         <script src="js/uikit-icons.min.js"></script>
     </head>
     <body>
+
+      <div class="uk-offcanvas-content">
+        <div class="uk-inline uk-height-viewport hero-dark">
+      </div>
+      <div class="uk-offcanvas-content">
+        <div class="uk-inline uk-height-viewport hero-image" uk-parallax="bgy: -200">
+      </div>
+
         <div class="uk-container uk-container-expand uk-text-center" id="header">
             <ul class="uk-list uk-position-top-right" id="nav">
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
-            <h1>Picks Disease</h1>
+            <h1 id="hero">Picks Disease</h1>
         </div>
 
-      <!-- filter -->
+<!-- filter -->
+        <div class="uk-clearfix uk-sticky uk-padding uk-padding-remove-vertical" uk-sticky="bottom: #offset">
+          <div class="uk-float-left">
+            <p id="count" class="uk-text-small">Showing all 999 items</p>
+          </div>
+            <button class="uk-button uk-button-default uk-float-right" type="button" uk-toggle="target: #offcanvas-reveal">Filter</button>
+            <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true; flip: true">
+                <div class="uk-offcanvas-bar">
 
-      <div class="uk-container uk-container-large uk-sticky" uk-sticky="bottom: #offset">
-        <div class="uk-clearfix">
-                      <div class="uk-float-left uk-padding uk-padding-remove-bottom uk-padding-remove-left">
-                        <p id="count" class="uk-text-small">Showing all 999 items</p>
-                        </p>
-                      </div>        
-            <div class="uk-float-right uk-padding uk-padding-remove-right">
-                      <div class="uk-inline">
-                          <p class="uk-padding-right">Filter by:</p>
-                      </div>             
-                <div class="uk-inline">
-                    <button class="uk-button uk-button-default" type="button">Filter category</button>
-                      <div uk-dropdown="mode: click">
-                        <ul class="uk-list">
+                    <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <h3>Title</h3>
+                    <h4>Title</h4>
+
+                        <ul class="uk-list uk-column-1-2">
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
@@ -44,12 +56,10 @@
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                         </ul>
-                      </div>
-                </div>
-                <div class="uk-inline">
-                    <button class="uk-button uk-button-default" type="button">Filter category</button>
-                      <div uk-dropdown="mode: click">
-                        <ul class="uk-list">
+
+                    <h4>Title</h4>
+
+                        <ul class="uk-list uk-column-1-2">
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
@@ -57,12 +67,16 @@
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                         </ul>
-                      </div>
-                </div>
-                <div class="uk-inline">
-                    <button class="uk-button uk-button-default" type="button">Filter category</button>
-                      <div uk-dropdown="mode: click">
-                        <ul class="uk-list">
+
+                    <h4>Title</h4>
+
+                        <ul class="uk-list uk-column-1-2">
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
+                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
@@ -70,76 +84,92 @@
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                             <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
                         </ul>
-                      </div>
                 </div>
-                <button class="uk-button uk-button-link uk-margin-small-left">Clear<span class="uk-margin-small-left" uk-icon="close"></span></button>
-            </div>                
+            </div>
         </div>
-      </div>
-
-      <!-- grid -->
-        <div class="uk-container uk-container-large">
-          <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-          </div>
-          <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-          </div>
-          <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-          </div>
-          <div class="uk-child-width-expand@s uk-text-center" uk-grid>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-              <div>
-                  <img src="images/pick-items/test-image.png">
-              </div>
-          </div>
+<!-- grid -->
+      <div class="uk-child-width-1-4 uk-grid-collapse uk-text-center uk-padding-small" uk-grid uk-scrollspy="target: > div; cls:uk-animation-slide-bottom-medium; delay: 100; repeat: true; hidden: true; offset-top: 100">
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
         </div>
-      </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+        <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+         <div class="uk-width-1-4@l uk-width-1-2@s">
+            <img src="images/pick-items/test-image.png" class="grid-pic">
+        </div>
+    </div>
+
+<!-- grid end -->
 
 
-<button class="uk-button uk-button-default uk-align-center uk-margin-large-bottom uk-margin-large-top">Load more</button>
+
+    <button class="uk-button uk-button-default uk-align-center uk-margin-large-bottom uk-margin-large-top">Load more</button>
+    <a href="" uk-totop></a>
+</div>
 
 
 
