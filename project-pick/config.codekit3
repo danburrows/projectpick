@@ -7,8 +7,18 @@
 		"uuidString": "AB19E845-B86D-45C6-A591-541E3E324D0D"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26330",
 "files": {
+	"\/css\/over-app.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/over-app-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/css\/over-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -95,6 +105,35 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/fonts\/FontAwesome.otf",
+		"oF": 0
+		},
+	"\/images\/hero-test.png": {
+		"ft": 32768,
+		"iS": 7803219,
+		"oA": 0,
+		"oAP": "\/images\/hero-test.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/pick-items\/test-image.png": {
+		"ft": 32768,
+		"iS": 1805248,
+		"oA": 0,
+		"oAP": "\/images\/pick-items\/test-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/index-2.html": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/index-2.html",
 		"oF": 0
 		},
 	"\/index.html": {
@@ -192,7 +231,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/sass\/css\/_layouts-dir.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -205,7 +244,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/sass\/css\/_modules-dir.css",
-		"oF": 0,
+		"oF": 1,
 		"oS": 0,
 		"uL": 1
 		},
@@ -222,7 +261,53 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"\/sass\/over.sass": {
+	"\/sass\/_mixins.sass": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_variables.sass": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/css\/_variables.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/css\/_layouts-dir.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_layouts-dir-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/sass\/css\/_modules-dir.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/sass\/css\/_modules-dir-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/sass\/over-app.sass": {
 		"aP": 1,
 		"bl": 0,
 		"dP": 10,
@@ -230,7 +315,7 @@
 		"ft": 2,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/css\/over.css",
+		"oAP": "\/css\/over-app.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -252,6 +337,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -815,6 +901,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
