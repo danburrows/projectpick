@@ -8,3 +8,7 @@ Description: projectpick styles
  * 1.0 Body
  */
 
+body {
+  color: #000;
+  font: "Andale Mono", monospace;
+  font-size: 16px; }
