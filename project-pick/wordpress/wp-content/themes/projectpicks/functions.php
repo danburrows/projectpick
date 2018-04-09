@@ -3,7 +3,7 @@
 function projectpick_resources() {
     // CSS
     wp_enqueue_style('style', get_stylesheet_directory_uri().'style.css');
-    wp_enqueue_style('styles', get_stylesheet_directory_uri().'/css/uikit.min.css');
+    wp_enqueue_style('uikit', get_stylesheet_directory_uri().'/css/uikit.min.css');
     wp_enqueue_style('over', get_stylesheet_directory_uri().'/css/over.css');
 
     // Javascript
