@@ -84,9 +84,9 @@
             ?>
     </div> 
 
- <button class="uk-button uk-button-default uk-align-center uk-margin-large-bottom uk-margin-large-top">Load more</button>
+<!--  <button class="uk-button uk-button-default uk-align-center uk-margin-large-bottom uk-margin-large-top">Load more</button>
     <a href="" uk-totop></a>
-</div>
+</div> -->
 
 
-<?php get_header(); ?>
+
