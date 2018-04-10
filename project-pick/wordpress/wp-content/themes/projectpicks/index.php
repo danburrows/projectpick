@@ -63,18 +63,18 @@
 <!-- grid -->
 
 
-      <div class="uk-child-width-1-4 uk-grid-collapse uk-text-center uk-padding-small" uk-grid uk-scrollspy="target:> div; cls:uk-animation-slide-bottom-medium; delay: 100; repeat: true; hidden: true; offset-top: 100">
+      <div class="uk-child-width-1-4 uk-grid-collapse uk-text-center uk-padding-small" id="posts" uk-grid uk-scrollspy="target:> div; cls:uk-animation-slide-bottom-medium; delay: 100; repeat: true; hidden: true; offset-top: 100">
      
 
             <?php
 
             if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
-                    <div class="uk-width-1-4@l uk-width-1-2@s">
+                    <article class="uk-width-1-4@l uk-width-1-2@s post">
                         <a href=""><?php the_post_thumbnail('post-thumbnail', array('class' => 'grid-pic uk-card uk-card-hover uk-card-body')); ?></a>
-                    </div>
+                    </article>
             <!-- if no posts -->
-                <?php endwhile;                 
+                <?php endwhile;               
 
                 else :
                     echo "<p>No wposts</p>" ;

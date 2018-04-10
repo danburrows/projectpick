@@ -1,14 +1,17 @@
 jQuery(function($){
 	var canBeLoaded = true, // this param allows to initiate the AJAX call only if necessary
 	    bottomOffset = 2000; // the distance (in px) from the page bottom when you want to load more posts
+	    console.log('Init');
  
 	$(window).scroll(function(){
+		console.log('scrolled');
 		var data = {
 			'action': 'loadmore',
 			'query': misha_loadmore_params.posts,
 			'page' : misha_loadmore_params.current_page
 		};
 		if( $(document).scrollTop() > ( $(document).height() - bottomOffset ) && canBeLoaded == true ){
+			console.log('misha', misha_loadmore_params);
 			$.ajax({
 				url : misha_loadmore_params.ajaxurl,
 				data:data,
@@ -19,8 +22,9 @@ jQuery(function($){
 					canBeLoaded = false; 
 				},
 				success:function(data){
+					console.log(data);
 					if( data ) {
-						$('#main').find('article:last-of-type').after( data ); // where to insert posts
+						$('#posts').find('article:last-of-type').after( data ); // where to insert posts
 						canBeLoaded = true; // the ajax is completed, now we can run it again
 						misha_loadmore_params.current_page++;
 					}

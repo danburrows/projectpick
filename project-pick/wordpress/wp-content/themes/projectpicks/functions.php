@@ -2,7 +2,7 @@
 
 function projectpick_resources() {
     // CSS
-    wp_enqueue_style('style', get_stylesheet_directory_uri().'style.css');
+    wp_enqueue_style('style', get_stylesheet_directory_uri().'/style.css');
     wp_enqueue_style('uikit', get_stylesheet_directory_uri().'/css/uikit.min.css');
     wp_enqueue_style('over', get_stylesheet_directory_uri().'/css/over.css');
 
@@ -63,6 +63,7 @@ add_action( 'wp_enqueue_scripts', 'misha_my_load_more_scripts' );
 // ajax handler //
 
 function misha_loadmore_ajax_handler(){
+
  
     // prepare our arguments for the query
     $args = json_decode( stripslashes( $_POST['query'] ), true );
@@ -73,18 +74,15 @@ function misha_loadmore_ajax_handler(){
     query_posts( $args );
  
     if( have_posts() ) :
+        
  
         // run the loop
-        while( have_posts() ): the_post();
- 
-            // look into your theme code how the posts are inserted, but you can use your own HTML of course
-            // do you remember? - my example is adapted for Twenty Seventeen theme
-            get_template_part( 'template-parts/post/content', get_post_format() );
-            // for the test purposes comment the line above and uncomment the below one
-            // the_title();
- 
- 
-        endwhile;
+        while (have_posts()) : the_post(); ?>
+                    <article class="uk-width-1-4@l uk-width-1-2@s post">
+                        <a href=""><?php the_post_thumbnail('post-thumbnail', array('class' => 'grid-pic uk-card uk-card-hover uk-card-body')); ?></a>
+                    </article>
+            <!-- if no posts -->
+                <?php endwhile; 
  
     endif;
     die; // here we exit the script and even no wp_reset_query() required!
