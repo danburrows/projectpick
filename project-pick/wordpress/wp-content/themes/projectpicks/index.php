@@ -1,64 +1,12 @@
-<?php get_header(); ?>
+    <?php get_header(); ?>
 
 <!-- filter -->
         <div class="uk-clearfix uk-sticky uk-padding uk-padding-remove-vertical" uk-sticky="bottom: #offset">
           <div class="uk-float-left">
             <p id="count" class="uk-text-small">Showing all 999 items</p>
-          </div>
-            <button class="uk-button uk-button-default uk-float-right" type="button" uk-toggle="target: #offcanvas-reveal">Filter</button>
-            <div id="offcanvas-reveal" uk-offcanvas="mode: reveal; overlay: true; flip: true">
-                <div class="uk-offcanvas-bar">
-
-                    <button class="uk-offcanvas-close" type="button" uk-close></button>
-                    <h3>Title</h3>
-                    <h4>Title</h4>
-
-                        <ul class="uk-list uk-column-1-2">
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                        </ul>
-
-                    <h4>Title</h4>
-
-                        <ul class="uk-list uk-column-1-2">
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                        </ul>
-
-                    <h4>Title</h4>
-
-                        <ul class="uk-list uk-column-1-2">
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                            <li><label><input class="uk-checkbox" type="checkbox"> Filter 1</label></li>
-                        </ul>
-                </div>
-            </div>
-        </div> 
-
+          <?php echo do_shortcode('[searchandfilter id="93"]'); ?>
+        </div>
+    </div> 
 
 <!-- grid -->
 
